@@ -7,6 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SortsTest {
 
+    @org.junit.jupiter.api.Test
+    void toString2() {
+        List<Card> cards = Card.deck();
+        Card first = cards.get(0);
+
+        assertEquals("ACE of CLUBS", first.toString());
+    }
 
     @org.junit.jupiter.api.Test
     void shuffleAndSort() {
